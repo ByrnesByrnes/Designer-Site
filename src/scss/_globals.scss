@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*, *::before, *:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url('../../assets/double-bubble-outline.png');
+  background-size: 450px;
+  overflow-x: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,h2,h3,h4,h5 {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  color: $secondaryText;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+button {
+  outline: none;
+}
+
+button.white {
+  display: block;
+  font-size: 1rem;
+  border-radius: 50px;
+  background-color: #fff;
+  color: $primary;
+  border: none;
+  padding: .5em 1.3em; 
+  font-weight: 800;
+  margin: 0 auto .6em;
+  box-shadow: $shadow;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+
+  &:hover {
+    background: $secondary;
+    color: #fff;
+  }
+}
+
+.curve {
+  display: block;
+  width: 100vw;
+  margin: -2px 0;
+  position: relative;
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 18px;
+  } 
+
+  .curve.blue {
+    margin: 0 0 -2em 0;
+  }
+
+  .curve.red-bottom {
+    margin-bottom: calc(-1em - 6.333vw);
+  }
+}

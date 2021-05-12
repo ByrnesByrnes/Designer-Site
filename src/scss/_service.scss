@@ -1,0 +1,63 @@
+.service {
+  background-color: #ededf8;
+  margin: 0 auto 1em;
+  padding: 1.25em;
+  border-radius: 20px;
+  box-shadow: $shadow;
+
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 300px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    line-height: 90%;
+    font-weight: 500;
+    text-transform: capitalize;
+    & span {
+      font-size: .75rem;
+      display: block;
+      color: $primary;
+    }
+  }
+
+  &__image {
+    height: 100%;
+    max-height: 110px;
+    display: block;
+  }
+
+  &__text {
+    font-size: 1.124rem;
+    color: #495867;
+  }
+
+  &__button {
+    font-size: 1.125rem;
+    padding: .5em 1.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    background-color: $primary;
+    width: fit-content;
+    margin: 0 auto;
+    box-shadow: $shadow;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    
+    &:hover {
+      background: $secondary;
+      color: #fff;
+    }
+  }
+}

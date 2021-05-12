@@ -1,0 +1,124 @@
+.header {
+  position: fixed;
+  background: #fff;
+  padding: .875em 1.875em;
+  width: 100%;
+  z-index: 5;
+  border-bottom: 2px solid $primary; 
+  height: 60px;
+  
+  .col-1 {  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    color: $primary;
+    font-weight: bold;
+    letter-spacing: -.1em;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+
+  .menu {
+    color: $primary;
+    height: 2em;
+    width: 2em;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .get-quote {
+    display: none;
+  }
+
+  .menu-close {
+    color: white;
+    font-size: 1.5rem;
+    margin: 1em 1em 1em auto;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    &:hover {
+      color: $secondary;
+    }
+  }
+
+  .nav__list {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background: $primary;
+    width: 75%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    transition: .2s ease-in-out;
+
+    &.open {
+      transform: translateX(0);
+    }
+  }
+ 
+  .nav__link a{
+    font-size: 1rem;
+    padding: 1em;
+    display: block;
+    color: #fff;
+    text-align: right;
+    width: 100%;
+    transition: .2s ease-in-out;
+    &:hover {
+      background: $secondary;
+      
+    }
+  }
+
+  @media only screen and (min-width: 700px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $padding;
+
+    .col-1 {
+      justify-content: flex-start;
+      
+    }
+  
+    .get-quote {
+      font-size: .875rem;
+      display: unset;
+      margin: 0; 
+    }
+  
+    .menu,
+    .menu-close {
+      display: none;
+    }
+   
+    .nav__list {
+      position: unset;
+      flex-direction: row;
+      transform: translateX(0);
+      background: none;
+      height: fit-content;
+      width: 100%;
+     
+    }
+   
+    .nav__link a {
+      color: $primarytext;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+export { default as Header } from './header'
+export { default as Hero } from './hero'
+export { default as Curve } from './curve'
+export { default as SectionTwo } from './section-two'
+export { default as Service} from './service'
+export { default as Footer} from './footer'
